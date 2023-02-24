@@ -1,0 +1,76 @@
+<!-- Fichier HTML pour le projet Antipode contour
+
+Cette page permet de faire la structure generale de notre page avec les differents elements important. 
+Elle fait le lien egalement avec les differentes source externe que va utiliser notre code.
+
+-->
+
+
+<html lang="fr">      <!-- Defini la langue de notre page ici en Français -->
+  <head>
+    <meta charset="utf-8">              <!-- Defini l'alphabet et les caracteres qu el'on peut utilisé -->
+    <title>Antipode Leaflet</title>    <!-- Defini le titre de notre projet, visible dans son onglet -->
+
+    
+
+<link rel="stylesheet" type="text/css" href="src/leaflet.css"/>     <!-- Importation de la charte graphique spécifique à leaflet -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+crossorigin=""/>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- Pour pouvoir faire une requete ajax -->
+
+
+<script type="text/javascript" src="src/source.js"></script>    <!-- Importation des sources externe (pour choisir les differenes types de carte) groupée en 1 seul dossier source  -->
+
+
+<link rel="stylesheet" type="text/css" href="src/L.Control.Pan.css"/> <!-- Importation de la source pour ce deplacer sans la souris avec des fléches sur la carte -->
+
+<script type="text/javascript" src="src/L.Control.Pan.js"></script>
+
+<link rel="stylesheet" type="text/css" href="src/L.Control.ZoomBar.css"/> <!-- Importation de la source pour zoomer sur la carte avec un outils directement sur la carte -->
+
+
+<script type="text/javascript" src="src/L.Control.ZoomBar.js"></script> 
+
+
+
+
+<link rel="stylesheet" href="map.css">   <!-- Importation de notre propore charte graphique -->
+
+
+  </head>
+
+  <body style="border: 2; margin: 2;">
+
+<!-- Texte de presentation -->
+
+    <div id="titre">Antipode : l'autre côté de la Terre
+
+      <p id="explication"> Ne vous êtes vous jamais demander qui habite de l'autre coté de la terre sous vos pied?
+        Cette carte interactive vous permet de le savoir</p>
+
+    </div>
+<!-- Defini l'origine de la premiere carte, recuperé par le css et le js-->
+    <div id="map1"></div>
+<!-- Defini l'origine de la deuxieme carte,  recuperé par le css et le js -->
+    <div id="map2"></div>
+
+    <!-- Texte annexe -->
+    <div id="reference">
+      
+      
+      Réalisé par Yanzhuo Peng,Maxime Charzat et Laura Parisot élèves en 2e année à l'ENSG Géomatique sur plusieurs années</div>
+
+      
+    <div id="bar"></div>
+
+ <!-- Source de notre javascript  -->
+    <script src="map.js"></script>
+    
+  </body>
+
+
+</html>
+
+ <!-- Fin de la page HTML -->
